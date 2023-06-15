@@ -103,12 +103,49 @@ INSERT INTO Cluster (name, typ) VALUES ("7b34", "Pitch");
 INSERT INTO Cluster (name, typ) VALUES ("154", "Pitch");
 INSERT INTO Cluster (name, typ) VALUES ("b345", "Pitch");
 INSERT INTO Cluster (name, typ) VALUES ("12b35", "Pitch");
+INSERT INTO Cluster (name, typ) VALUES ("15b6", "Pitch");
+INSERT INTO Cluster (name, typ) VALUES ("b35b71", "Pitch");
+INSERT INTO Cluster (name, typ) VALUES ("12b3", "Pitch");
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("1' 1' 2' 2' b3' b3'", 6, 5, "bVImaj7 Im7");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("b35b71", "1' 1' 2' 2' b3' b3'");
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("1' 4' b7' 5'", 4, 4, "I7sus");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("154", "1' 4' b7' 5'");
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("4' 4' b7' 3' 6' b3' b6' 2'", 8, 6, "I7sus VII7sus bVII7sus VI7sus");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("154", "4' 4' b7' 3' 6' b3' b6' 2'");
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("5' b7' b3'", 3, 1, "Im7 / 3 Vm7 / 5 Im7");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("b35b71", "5' b7' b3'");
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("5' b7' b3'", 3, 1, "Iadd2/3 bVmaj7 bIImaj7");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("b35b71", "5' b7' b3'");
+
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("5' b7' b3'", 3, 1, "Im7 / 3 bVIm6");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("b35b71", "5' b7' b3'");
+
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Smile Like That", 3, 1);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("High", "Smile Like That");
 
 INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("1' 5' 5' 2'' 4' 4'", 6, 5, "bVImaj7 bVII7");
 INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("154", "1' 5' 5' 2'' 4' 4'");
 
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("1' 5' 4' 1' 5' 4'", 6, 5, "bVImaj7 bVII7");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("154", "1' 5' 5' 2'' 4' 4'");
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("7 4' b3' 7 4' b3'", 6, 5, "Vm7 Im7");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("7b34", "7 4' b3' 7 4' b3'");
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("7 b3' b3' 4' 7 b3'", 6, 6, "bIII7");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("7b34", "1' 5' 5' 2'' 4' 4'");
+
 INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("1' 5' 5' 2'' 4' 4'", 6, 5, "VIm7 bVImaj7");
 INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("154", "1' 5' 5' 2'' 4' 4'");
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("b6' b6' 1' b6' 5' 5'", 6, 5, "IVm7 Im7");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("15b6", "b6' b6' 1' b6' 5' 5'");
 
 INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("7 7 4' b3'", 4, 4, "Vm7 Im7");
 INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("7b34", "7 7 4' b3'");
@@ -116,7 +153,7 @@ INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("7b34", "7 7 4' b3'")
 INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("b3' 5' 2' b3' 1'", 5, 5, "Im7 /7 bVImaj7");
 INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("12b35", "b3' 5' 2' b3' 1'");
 
-INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("1' 1' 2' 2' b3' b3'", 6, 4, "bVImaj7 bVII7 Im7");
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("1' 1' 2' 2' b3' b3'", 6, 5, "bVImaj7 bVII7 Im7");
 INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("12b35", "1' 1' 2' 2' b3' b3'");
 
 INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("b3' 4' 5' b7'", 4, 1, "Im7");
@@ -159,6 +196,9 @@ INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("b3' 4' 5' b3'' b7
 INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("b345", "b3' 4' 5' b3'' b7'");
 
 INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("b3' b3' 4' 5' b3'' b7'", 6, 6, "VII7/7 bII/7 bIII/7 bVIadd6/3 Im7/3");
+INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("b345", "b3' b3' 4' 5' b3'' b7'");
+
+INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("b3' b3' 4' 5' b3'' b7'", 6, 6, "bVImaj7 Im7");
 INSERT INTO is_in_cluster (cluster_name, node_mel) VALUES ("b345", "b3' b3' 4' 5' b3'' b7'");
 
 INSERT INTO Node (lil_mel, syllables, stress, chords) VALUES ("b3' b3' b3'", 3, 2, "bVImaj7 bVIm6");
@@ -214,6 +254,9 @@ INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("High", "Warehousing
 
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("All my fears are rising", 6, 5);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("High", "All my fears are rising");
+
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Rising to the highway", 6, 5);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("High", "Rising to the highway");
 
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("Inclusion", 3, 2);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Nation", "Inclusion");
@@ -386,8 +429,17 @@ INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Key", "Free");
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("It's be-bop", 2, 1);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Key", "It's be-bop");
 
-INSERT INTO Node (lil_text, syllables, stress) VALUES ("Injektiv ist Links", 5, 5);
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Injektiv", 3, 1);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Licht", "Injektiv ist Links");
+
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Bis Wolken wieder Lila sind", 8, 6);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Licht", "Bis Wolken wieder Lila sind");
+
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Lila Liebeslieder", 6, 3);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Licht", "Lila Liebeslieder");
+
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Beweise Wieder Widerspruch", 8, 6);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Licht", "Beweise Wieder Widerspruch");
 
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("Ich bin ich", 3, 3);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Licht", "Ich bin ich");
@@ -1288,6 +1340,9 @@ INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Key", "Key");
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("Public Key Cryptographie", 7, 7);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Key", "Public Key Cryptographie");
 
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("The center of the universe", 8, 6);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Space", "The center of the universe");
+
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("Privae Key Cryptographie", 1, 1);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Key", "Private Key Cryptographie");
 
@@ -1297,7 +1352,7 @@ INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Key", "We mo-du-lat
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("The I", 2, 2);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("High", "The I");
 
-INSERT INTO Node (lil_text, syllables, stress) VALUES ("I I I Institute", 6, 5);
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("I I I Institute", 6, 4);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("High", "I I I Institute");
 
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("Prime", 1, 1);
@@ -1390,17 +1445,20 @@ INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Space", "Da-ta ba-s
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("My da-ta ba-sis", 5, 2);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Space", "My da-ta ba-sis");
 
-INSERT INTO Node (lil_text, syllables, stress) VALUES ("Maze", 1, 1);
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Find Path Through A Maze", 5, 5);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Space", "Maze");
 
-INSERT INTO Node (lil_text, syllables, stress) VALUES ("Ra-tio-nal", 3, 3);
-INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Nacht", "Ra-tio-nal");
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Ganzrational Gebrochen", 7, 6);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Ort", "Ganzrational Gebrochen");
 
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("Find clus-ters", 3, 2);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("High", "Find clus-ter");
 
-INSERT INTO Node (lil_text, syllables, stress) VALUES ("Clus-ter fuck", 3, 1);
-INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Space", "Clus-ter fuck");
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("She just wants to dance", 5, 5);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Space", "She just wants to dance");
+
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Functional Dependency", 5, 5);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Space", "Functional Dependency");
 
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("Cluster find", 3, 3);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("High", "Cluster find");
@@ -1429,8 +1487,8 @@ INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Nacht", "Machen Gut
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("La-chend durch die Nacht", 5, 5);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Nacht", "La-chend durch die Nacht");
 
-INSERT INTO Node (lil_text, syllables, stress) VALUES ("Und ich lie-be ih-ren Arsch", 5, 5);
-INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Nacht", "Und ich lie-be ih-ren Arsch");
+INSERT INTO Node (lil_text, syllables, stress) VALUES ("Lie-be ih-ren Arsch", 5, 5);
+INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Nacht", "Lie-be ih-ren Arsch");
 
 INSERT INTO Node (lil_text, syllables, stress) VALUES ("Da-ten-ban-ken-ar-chi-tekt", 7, 7);
 INSERT INTO is_in_cluster (cluster_name, node_text) VALUES ("Nacht", "Da-ten-ban-ken-ar-chi-tekt");
@@ -1627,10 +1685,10 @@ CREATE VIEW SevenThreeFour AS SELECT lil_mel, chords, syllables, stress, cluster
 CREATE VIEW OneFiveFour AS SELECT lil_mel, chords, syllables, stress, cluster_name FROM ClusteredNode WHERE cluster_name = "154";
 CREATE VIEW ThreeFourFive AS SELECT lil_mel, chords, syllables, stress, cluster_name FROM ClusteredNode WHERE cluster_name = "b345";
 
-CREATE VIEW Mel AS SELECT * FROM ClusteredNode WHERE (cluster_name = "7b34" OR cluster_name = "154" OR cluster_name = "b345" OR cluster_name = "12b35" OR cluster_name= "147");
-CREATE VIEW Text AS SELECT lil_text, syllables, stress, cluster_name FROM ClusteredNode WHERE (cluster_name = "Space" OR cluster_name = "Regen" OR cluster_name = "High" OR cluster_name = "Nacht");
+CREATE VIEW Mel AS SELECT * FROM ClusteredNode WHERE (cluster_name = "7b34" OR cluster_name = "154" OR cluster_name = "b345" OR cluster_name = "12b35" OR cluster_name= "147" OR cluster_name="15b6" OR cluster_name="b35b71" OR cluster_name = "12b3");
+CREATE VIEW Text AS SELECT lil_text, syllables, stress, cluster_name FROM ClusteredNode WHERE (cluster_name = "Space" OR cluster_name = "Regen" OR cluster_name = "High" OR cluster_name = "Nacht" OR cluster_name = "Licht");
 
-CREATE VIEW SpaceOne AS SELECT Mel.lil_mel, Text.lil_text, Mel.chords, Mel.syllables, Mel.stress, Mel.cluster_name, Text.cluster_name FROM Text JOIN Mel ON (Text.syllables = Mel.syllables AND Text.stress = Mel.stress);
+CREATE VIEW SpaceOne AS SELECT Mel.lil_mel, Text.lil_text, Mel.chords, Mel.syllables, Mel.stress, Mel.cluster_name, Text.cluster_name FROM Text JOIN Mel ON (Text.syllables = Mel.syllables AND Text.stress = Mel.stress) ORDER BY Mel.cluster_name;
 
 SELECT * FROM Pain;
 SELECT * FROM Eight;
