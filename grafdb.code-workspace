@@ -4,7 +4,7 @@
 			"path": "."
 		},
 		{
-			"path": "../../TU Berlin/Isda/sql:dql ha"
+			"path": "../../TU Berlin/Isda/isda-sose23-main-09_data_streams/09_data_streams"
 		}
 	],
 	"settings": {}
